@@ -1,11 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Page</title>
+    <style>
+        body {
+            background-color: #ffffff; /* Light silver background */
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+           width: 400px;
+            background-color: #dad7d7;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .form-container input[type="text"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container input[type="text"]::placeholder {
+            color: #aaa;
+        }
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #000; 
+            border-radius: 4px;
+            background-color: #fff;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50; 
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+        .dropdown {
+            width: 150px; /* Width of the dropdown */
+            background-color: #4CAF50; /* Green background */
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            position: relative;
+            text-align: center;
+            line-height: 40px; /* Center text vertically */
+            height: 50px; /* Height of the dropdown */
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #4CAF50; /* Green background */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            width: 150%;
+            top: 100%; /* Position dropdown below the rectangle */
+            left: 0;
+            background-color: gray;
+            text-align: left;
+        }
+        .dropdown-content a {
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #776b6b; /* Dark silver background */
+        }
+        .dropdown:hover .dropdown-content {
+            display: grid;
+        }
+    </style>
 </head>
+<br><br><br><br><br><br><br><br>
 <body>
-  
-</body>
+  <br><br><br><br><br><br><br><br>
+
+<div class="form-container">
+    <form action="#">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" placeholder="your name.." />
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Your last name" />
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="australia" selected>Australia</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<div class="dropdown">
+  Dropdown
+  <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br>
+
+</body><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
 </html>
